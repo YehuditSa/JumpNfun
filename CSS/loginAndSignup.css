@@ -1,0 +1,100 @@
+#loginAndSignupDiv {
+  width: 100vw;
+  height: 70vh;
+  display: inline-block;
+  position: relative;
+  background-color: rgba(3, 11, 44, 0.9);
+  z-index: 15;
+  margin-top: 13vh;
+  border-radius: 2%;
+}
+
+#x {
+  display: inline;
+  height: 5%;
+  position: fixed;
+  margin-top: 1%;
+  right: 1%;
+  cursor: pointer;
+}
+
+.invalidInput {
+  color: red;
+  font-size: 0.7em;
+  color: red;
+    font-size: 0.8em;
+    display: inline;
+}
+
+
+
+.form {
+  position: relative;
+  z-index: 1;
+  width: 40vw;
+  height: 50vh;
+  margin: 2vh 0 0 25vw;
+  padding: 4%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"] {
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.form button {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  outline: none;
+  background-color: #2196F3;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+  background-color: #1976D2;
+}
+
+.form h2 {
+  color: #333333;
+  font-size: 28px;
+  margin: 0 0 30px;
+}
+
+.form p.message {
+  color: #666666;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.form p.message span {
+  color: #2196F3;
+  text-decoration: none;
+}
+
+.form p.message span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

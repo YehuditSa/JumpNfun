@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jump 'N' Fun</title>
+    <link href="../CSS/jumpNFun.css" rel="stylesheet" />
+    <link href="../CSS/all.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <a href="homePage.html" id="returnToHomePage">
+      <i class="fa-solid fa-arrow-right"> </i>
+    </a>
+
+    <div id="timer">
+      <p id="yourScore"></p>
+      <p id="yourheighestScore"></p>
+      <p id="highestScore"></p>
+    </div>
+
+    <div id="gameContainer">
+      <div id="clouds">
+        <img src="../Images/clouds.gif"  />
+        <img src="../Images/clouds.gif"  />
+        <img src="../Images/clouds.gif"  />
+        <img src="../Images/clouds.gif"  />
+      </div>
+      <img title="jump!!" src="../Images/run.gif" id="runner" />
+    </div>
+
+    <div id="options">
+      <div id="instructionsButton">Game Instructions</div>
+      <div id="refreshButton">
+        <i class="fa-solid fa-redo"></i>
+      </div>
+    </div>
+
+    <div id="gameOver">
+      <h1>GAME OVER</h1>
+      <i class="fa-solid fa-redo"></i>
+    </div>
+
+    <div id="instructions">
+      <h2>Jump 'N' Fun - Instructions:</h2>
+      <br />
+      Our game doesn't have many instructions. <br />
+      Simply - you must jump without touching the trees. <br />
+      The jump is done by pressing the space key or the up arrow key.
+      <br /><br />
+      <strong>Note!</strong> As time goes by the speed increases!! <br />
+      In this game there is no possibility to stop for rest - rally, disqualified! <br /><br />
+      <br />
+    </div>
+
+    <audio src="../sounds/gameOver.wav" type="audio/wav" id="gameOverSound"></audio>
+    <audio src="../sounds/jump.wav" type="audio/wav" id="jumpSound"></audio>
+    <script src="../JS/jumpNFun.js"></script>
+  </body>
+</html>

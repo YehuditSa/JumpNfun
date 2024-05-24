@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/homePage.css" rel="stylesheet" />
+    <link href="../CSS/loginAndSignup.css" rel="stylesheet" />
+    <link href="../CSS/all.min.css" rel="stylesheet" />
+    <title>It's Time to Game</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="top-naviagation">
+        <ul class="games_nav" role="navigation">
+          <li class="games_logo">
+            <a href="./homePage.html">
+              <img src="../Images/logoElement.png" />
+              It's Time to Game
+            </a>
+          </li>
+          <li id="nav_buttons">
+            <div class="signup">
+              <div>Sign up</div>
+            </div>
+            <div class="login">
+              <div>Log in</div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <div id="welcomeDiv">
+        <h1 id="welcome"></h1>
+        <h2>Please choose a game:</h2>
+      </div>
+
+      <div class="games">
+        <a href="./404Page.html">
+          <div class="snake card">
+            <img class="img_container" src="../Images/snakeGame.gif" alt="gif of snake" />
+            <h4 class="game_title">SNAKE</h4>
+            <button class="download_button" href="#">Play Now</button>
+          </div>
+        </a>
+
+        <a href="./404Page.html">
+          <div class="mario card">
+            <img class="img_container" src="../Images/marioGame.gif" alt="gif of mario" />
+            <h4 class="game_title">MARIO</h4>
+            <button class="download_button" href="#">Play Now</button>
+          </div>
+        </a>
+
+        <a href="./jumpNFun.html">
+          <div class="jump_n_fun card">
+            <img class="img_container" src="../Images/jumpNFun.gif" alt="" />
+            <h4 class="game_title">JUMP 'N FUN</h4>
+            <button class="download_button" href="">Play Now</button>
+          </div>
+        </a>
+
+        <a href="./404Page.html">
+          <div class="pockman card">
+            <img class="img_container" src="../Images/pockmanGame.gif" alt="gif of pockman" />
+            <h4 class="game_title">POCK MAN</h4>
+            <button class="download_button" href="#">Play Now</button>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div id="loginAndSignupDiv">
+      <img id="x" src="../Images/xImg.png" />
+      <div class="form" id="loginDiv">
+        <h2>Log in</h2>
+        <form id="loginForm">
+          <input type="email" placeholder="Email" id="loginEmail" required />
+          <p class="invalidInput" id="emailNotExist"></p>
+          <input type="password" placeholder="Password" id="loginPassword" required />
+          <p class="invalidInput" id="incorrectPassword"></p>
+          <button type="submit" id="loginSubmit">Log in</button>
+        </form>
+        <p class="message">
+          Not registered?
+          <span id="fromLoginToSignup">Create an account</span>
+        </p>
+      </div>
+      <div class="form" id="signupDiv">
+        <h2>Sign up</h2>
+        <form id="signupForm">
+          <input type="email" placeholder="Email" id="signupEmail" required />
+          <p class="invalidInput" id="emailExist"></p>
+          <input type="password" placeholder="Password" id="signupPassword" required />
+          <input type="text" placeholder="Username" id="signupUsername" required />
+          <button type="submit" id="signupSubmit">Sign up</button>
+        </form>
+        <p class="message">
+          Already have an account?
+          <span id="fromSignupToLogin">Login</span>
+        </p>
+      </div>
+    </div>
+    <script src="../JS/homePage.js"></script>
+  </body>
+</html>
